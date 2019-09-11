@@ -1,4 +1,4 @@
-package com.kamilkoszarny.equifix.equifix.service;
+package com.kamilkoszarny.equifix.service;
 
 import java.util.ArrayList;
 import java.util.List;

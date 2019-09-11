@@ -1,4 +1,4 @@
-package com.kamilkoszarny.equifix.equifix;
+package com.kamilkoszarny.equifix;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

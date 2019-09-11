@@ -1,7 +1,7 @@
-package com.kamilkoszarny.equifix.equifix.service;
+package com.kamilkoszarny.equifix.service;
 
-import com.kamilkoszarny.equifix.equifix.model.Article;
-import com.kamilkoszarny.equifix.equifix.repository.ArticleRepository;
+import com.kamilkoszarny.equifix.model.Article;
+import com.kamilkoszarny.equifix.repository.ArticleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

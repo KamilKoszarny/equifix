@@ -1,4 +1,4 @@
-package com.kamilkoszarny.equifix.equifix;
+package com.kamilkoszarny.equifix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

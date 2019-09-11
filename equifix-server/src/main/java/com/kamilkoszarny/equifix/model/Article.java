@@ -1,4 +1,4 @@
-package com.kamilkoszarny.equifix.equifix.model;
+package com.kamilkoszarny.equifix.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
