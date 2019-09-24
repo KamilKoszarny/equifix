@@ -53,6 +53,11 @@
             <artifactId>spring-boot-starter-integration</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.8</version>
+        </dependency>
+        <dependency>
             <groupId>com.kamilkoszarny.equifix</groupId>
             <artifactId>equifix-web</artifactId>
             <version>${project.version}</version>
@@ -95,7 +100,7 @@
                             <outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.parent.basedir}/tutorial-web/src/main/web/dist/equifix-angular-app/</directory>
+                                    <directory>${project.parent.basedir}/equifix-web/src/main/web/dist/equifix-angular-app/</directory>
                                 </resource>
                             </resources>
                         </configuration>
