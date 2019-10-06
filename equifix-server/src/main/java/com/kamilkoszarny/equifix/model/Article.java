@@ -2,19 +2,22 @@ package com.kamilkoszarny.equifix.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="article")
+@Table(name = "article")
 @Data
 public class Article {
 
     @Id
     @GeneratedValue
     private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    private String status;
 
     private String comment;
 }
