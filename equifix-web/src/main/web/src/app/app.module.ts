@@ -7,11 +7,16 @@ import { ArticlesListComponent } from './articles-list/articles-list.component';
 import {ArticleService} from "./service/article.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { AddArticleComponent } from './add-article/add-article.component';
+import { AddCategoryComponent } from './add-category/add-category.component';
+import {CategoryService} from "./service/category.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticlesListComponent,
+    AddArticleComponent,
+    AddCategoryComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,7 @@ import {FormsModule} from "@angular/forms";
     HttpClientModule,
     FormsModule
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

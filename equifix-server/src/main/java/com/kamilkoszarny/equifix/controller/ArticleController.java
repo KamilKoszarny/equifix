@@ -3,6 +3,8 @@ package com.kamilkoszarny.equifix.controller;
 import com.kamilkoszarny.equifix.model.Article;
 import com.kamilkoszarny.equifix.service.ArticleService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -19,6 +21,11 @@ public class ArticleController {
     @GetMapping("/articles")
     public List<Article> articles() {
         return articleService.getAllArticles();
+    }
+
+    @PostMapping("/articles")
+    public Article addArticle(@RequestBody Article article) {
+        return articleService.addArticle(article);
     }
 }
 

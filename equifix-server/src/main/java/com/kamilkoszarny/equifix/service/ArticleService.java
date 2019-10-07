@@ -2,7 +2,6 @@ package com.kamilkoszarny.equifix.service;
 
 import com.kamilkoszarny.equifix.model.Article;
 import com.kamilkoszarny.equifix.repository.ArticleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -21,6 +20,10 @@ public class ArticleService {
         List<Article> articles = new ArrayList<>();
         articleRepository.findAll().forEach(articles::add);
         return articles;
+    }
+
+    public Article addArticle(Article article) {
+        return articleRepository.save(article);
     }
 }
 

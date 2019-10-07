@@ -15,4 +15,8 @@ export class ArticleService {
   public findAll(): Observable<Article[]> {
     return this.http.get<Article[]>(this.articlesUrl);
   }
+
+  public addArticle(article: Article) {
+    return this.http.post<Article>(this.articlesUrl, article);
+  }
 }
