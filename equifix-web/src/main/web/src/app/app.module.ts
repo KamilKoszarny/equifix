@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { AddArticleComponent } from './add-article/add-article.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import {CategoryService} from "./service/category.service";
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {CategoryService} from "./service/category.service";
     ArticlesListComponent,
     AddArticleComponent,
     AddCategoryComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
